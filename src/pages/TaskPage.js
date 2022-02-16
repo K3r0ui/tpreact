@@ -10,9 +10,9 @@ export default function TaskPage(){
 {loading ? ( <div> loading... </div> ) : (
   <>
 <TaskForm/>
-<Task/>
-<Task/>
-<Task/>
+<Task title="Learn HTML"/>
+<Task title="learn  REACT"/>
+<Task title="Learn angular"/>
 </>
 )}
     </div>

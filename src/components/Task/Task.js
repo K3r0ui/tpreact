@@ -1,5 +1,5 @@
 import './Task.css'
-  export function Task(){
+  export function Task(props){
       function renderActions(){
           return(
         <div className="actions">
@@ -11,8 +11,8 @@ import './Task.css'
     return(         
     <div className="task">
     <div className="title">
-        Learn Html
-    </div>
+      {props.title}
+      </div>
     {renderActions()}
 </div>)
 }
