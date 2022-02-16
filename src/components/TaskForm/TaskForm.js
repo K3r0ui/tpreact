@@ -1,12 +1,13 @@
 import './TaskForm.css'
-  export function TaskForm(){
+  export function TaskForm(props){
     const addTask = "Add a task";
     const steps =[ " Enter a title" , " click on the button" ]
+    //props.say()
     return(     
     <>
     <ul>
-    {steps.map(function(x) {
-      return ( <li>{x}</li>)
+    {steps.map(function(x,index) {
+      return ( <li key={index}>{x}</li>)
     })}
   
         {steps.map(step =>  (
